@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Java Script</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- css links -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+</head>
+  <body>
+    <div class="container mb_bottom">
+      <h1 class="text-danger">Click the button to change the text</h1>
+      <button type="button" class="btn btn-dark" onclick="textChange()">Click Here</button>
+      <h2 id="h2">Lorem ipsum dolor sit amet.</h2>
+
+      <h1 class="text-success">Click the button to change the text</h1>
+      <button type="button" class="btn btn-success" onclick="textWelcome()">Click Here</button>
+      <p id="p"> Lorem, ipsum dolor.</p>
+
+      <h1 class="text-alert">Click the button to see Alert</h1>
+      <button type="button" class="btn btn-warning" onclick="alertMessage()">Alert Button</button>
+      <!-- <p class="alert">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, explicabo?</p> -->
+
+      <h1>How is everything going</h1>
+      <button type="button" class="btn btn-primary" onclick="happy()">Greetings</button>
+      <h3 id="h3"> See good wishes</h3>
+      <hr>
+
+      <h1>See Current Date</h1>
+      <button type="button" class="btn btn-primary" onclick="showDate()">Show date</button>
+      <h3 id="d_h2">Current Date</h3>
+      <hr>
+
+      <h1>Click the switch to on/off the bulb</h1>
+      <button type="button" class="btn btn-success" onclick="bulbOn()">Switch ON</button>
+      <button type="button" class="btn btn-danger" onclick="bulbOff()">Switch OFF</button>
+      <img id="img" src="img/pic_bulboff.gif" alt="bulb">
+      <hr>
+
+      <h1>Click the button to change the font size</h1>
+      <button type="button" class="btn btn-dark" onclick="fontChange()">Change font size</button>
+      <h2 id="f_h2">Lorem ipsum dolor sit amet.</h2>
+      <hr>
+      
+      <h2>JavaScript in Body</h2>
+      <p id="demo"></p>
+      <script>
+      document.getElementById("demo").innerHTML = "My First JavaScript";
+      </script>
+      <hr>
+      <h1>Testing Document.write output</h1>
+      <button type="button" class="btn btn-dark" onclick="dWrite()">See Output</button>
+
+      <hr>
+      <h1>Testing Console  log output</h1>
+      <button type="button" class="btn btn-dark" onclick="cWrite()">See Output</button>
+
+      <h2>The window.print() Method</h2>
+      <p>Click the button to print the current page.</p>
+      <button class="btn btn-warning" onclick="window.print()">Print this page</button>
+
+      <hr>
+      <h1>Best wishes for you</h1>
+      <button type="button" class="btn btn-secondary" onclick="end()">Stay Happy</button>
+      <h4 id="h4">At the end</h4>
+
+    </div>
+
+
+    <div class="container mb_bottom">
+      <h1 class="text-center">JQuery Practice</h1>
+      <h2 class="text-info">Click the button to show alert</h2>
+      <button type="button" id="salert" class="btn btn-dark">Show Alert</button>
+      <hr>
+      <h2 class="text-info">Click the button to show/hide text</h2>
+      <button class="btn btn-success show">Show</button>
+      <button class="btn btn-danger hide">Hide</button>
+      <h3 id="j_h3">Lorem ipsum dolor sit amet.</h3>
+    </div>
+    <hr>
+
+    <div class="container mb_bottom">
+      <h1 class="text-info">Click the button to show/hide the text</h1>
+      <button id="show" class="btn btn-dark" type="button">Show</button>
+      <button id="hide" class="btn btn-dark" type="button">Hide</button>
+      <button id="tog" class="btn btn-dark" type="button">Toggle</button>
+      <h2 id="jq_h2">Lorem ipsum dolor sit amet.</h2>
+      <hr>
+      <h1 class="text-success">Click the button to fadein/fadeout the text</h1>
+      <button id="f_in" class="btn btn-success" type="button">FadeIn</button>
+      <button id="f_out" class="btn btn-warning" type="button">FadeOut</button>
+      <button id="f_tog" class="btn btn-secondary" type="button">FadeToggle</button>
+      <h3 class="jq_h3">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+      <hr>
+
+      <div class="ques mb-0">Click to see something interesting...</div>
+      <div class="ans mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatem atque eius laudantium doloremque modi incidunt maiores sequi deleniti quisquam.</div>
+      <hr>
+
+      <div id="m_in" class="mb-0">Click to see something interesting...</div>
+      <div id="m_show" class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatem atque eius laudantium doloremque modi incidunt maiores sequi deleniti quisquam.</div>
+      <hr>
+    </div>
+
+    <div class="container mb_bottom">
+      <h1 class="text-info text-center">jquery UI Practice</h1>
+      <h1 class="text-info">Dragable</h1>
+      <div id="draggable" class="ui-widget-content">
+        <p>Drag me around</p>
+      </div>
+
+      <div class="auto">
+        <h1 class="text-info">Autocomplete</h1>
+        <form action="#">
+          <label for="course">Course Topic</label>
+            <input id="input" type="text" id="course">
+            <button type="button" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+
+      <h1 class="text-info auto">Resizable</h1>
+      <div id="resize">
+        <h3 class="ui_h3">Resizable</h3>
+      </div>
+
+      <div class="sort auto">
+        <h1 class="text-info">Sortable</h1>
+        <ul id="sortable">
+          <li class="ui-state-default">Item 3</li>
+          <li class="ui-state-default">Item 2</li>
+          <li class="ui-state-default">Item 4</li>
+          <li class="ui-state-default">Item 5</li>
+          <li class="ui-state-default">Item 6</li>
+          <li class="ui-state-default">Item 7</li>
+          <li class="ui-state-default">Item 1</li>
+        </ul>
+      </div>
+
+      <div class="pickdate auto">
+        <h1 class="text-info">Datepicker</h1>
+        <p>Date: <input type="text" id="date"></p>
+      </div>
+      <div class="tooltips auto">
+        <h1 class="text-info">Tooltips</h1>
+        <p><label for="age">Your age:</label>
+          <input id="age" title="We ask for your age only for statistical purposes."></p>
+        <p>Hover the field to see the tooltip.</p>
+      </div>
+    </div>
+
+
+
+
+    <!-- script links -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
