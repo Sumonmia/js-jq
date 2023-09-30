@@ -41,6 +41,18 @@ function cWrite(){
     console.log(5*7);
 }
 
+// js
+wow = new WOW(
+    {
+    boxClass:     'wow',      // default
+    animateClass: 'animated', // default
+    offset:       0,          // default
+    mobile:       true,       // default
+    live:         true        // default
+  }
+  )
+  wow.init();
+
 //Jquery
 $(document).ready(function(){
     // alert
@@ -108,4 +120,15 @@ $(document).ready(function(){
     // tooltip
     $('#age').tooltip();
 
+})
+
+// Jquery Plugins
+$(document).ready(function(){
+    // counterup 
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+
+     $('#demo').counto(12345, 5000);
 })
